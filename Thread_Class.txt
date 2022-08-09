@@ -1,0 +1,12 @@
+import java.io.*;
+
+public class COL extends Thread{
+    public static void main(String[] args)
+    {
+        COL c=new COL();
+        c.start();
+        String tn=c.getName();
+        System.out.println(tn);
+
+    }
+}

@@ -1,0 +1,18 @@
+
+import java.io.*;
+
+public class COL implements Runnable{
+    public static void main(String[] args)
+    {
+        COL c=new COL();
+        Thread th=new Thread(c,"c_thread");
+        th.start();
+        String tn=th.getName();
+        System.out.println(tn);
+
+    }
+    @Override
+    public void run() {
+        System.out.println("Inside Run method");
+    }
+}
